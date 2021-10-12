@@ -1,0 +1,105 @@
+*{margin: 0; padding: 0; box-sizing: border-box; }
+a{text-decoration: none;}
+li{list-style: none;}
+
+/*폰트 설정*/
+@font-face {
+    font-family: 'HeirofLightBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 컨테이너 부분*/
+#container{width: 1200px; margin: 0 auto;}  /*margin : 0 auto : 가운대로 움직인다.*/
+
+
+/* 해더 부분*/
+header{width: 100%; background-color: skyblue; height: 100px;}
+
+
+/*로고 부분*/
+#log{width: 250px; height: 100%; float: left; line-height: 100px; padding-left: 10px;}
+#log h1{font-family: HeirofLightBold; font-size: 38px; color: white; text-shadow:0 -5px black;}
+
+/*네비 부분*/
+nav{width: 900px; height: 100%; float: right; padding-top: 40px;}
+
+#topMenu{height: 60px;}
+#topMenu > li{float: left; position: relative;}
+#topMenu > li > a{display : block; padding: 20px 60px;}
+
+#topMenu > li > ul{width: 160px; left: 20px; margin: 0; position: absolute; display: none; background-color: rgba(255,255, 255, 0.6)}
+
+#topMenu  li:hover ul{display: block; z-index: 10;} 
+
+#topMenu > li > ul > li{padding: 10px 10px 10px 30px;}
+
+
+
+
+/*슬라이드 부분*/
+#sildeShow{width: 100%; background-color: bisque; height: 300px;}
+#slideShow {
+
+    clear: both;    /* 플로팅 해제 */
+    width: 100%;    /* 너비 */
+    height: 300px;  /* 높이 */
+    overflow: hidden; /* 영역이 넘치면 감춤 */
+    position: relative;
+    
+}
+
+#slide {
+    position: absolute;
+}
+
+#slide > img {
+    width: 100%;
+    float: left;
+}
+
+button {
+    position: absolute;
+    height: 100%;       /* 이미지 높이에 맞추기*/
+    top: 0;
+    border: none;
+    padding: 20px;
+    background-color: transparent;  /* 투명한 배경 지정 */
+    color: #000;                  /* 화살표 색상 */
+    font-weight: 800;               /* 화살표 굵게 */
+    font-size: 24px;                /* 화살표 크기 지정 */
+    opacity: 0.5;                   /* 화살표를 반투명하게 지정 */
+
+}
+
+#prev {
+    left: 0;    /*왼쪽으로 붙이기 */
+}
+
+#next {
+    right: 0; /*오른쪽으로 붙이기 */
+}
+
+button:hover {  /* 버튼에 마우스 올렸을 때 */
+    background-color: #222;
+    color: #fff;            /* 흰색 화살표 */
+    opacity: 0.6;             /* 불투명도를 높임 */
+    cursor: pointer;        /* 포인터 모양으로 바꿈 */
+}
+
+button:focus {
+    outline: 0; /* 아웃라인 없앰 */
+}
+
+/*컨텐츠 부분*/
+#contants{width: 100%; background-color: blueviolet; height: 300px; margin-top: 20px;}
+
+/*탭메뉴 부분*/
+#tapMenu{width : 600px; background-color: hotpink; height: 100%; float: left;}
+
+/*링크스 부분*/
+#links{width: 500px; background-color: lavender; height: 100%; float: right;}
+
+/*푸터 부분*/
+footer{width: 100%; background-color: chocolate; height: 100px;}
+
